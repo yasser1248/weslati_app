@@ -6,3 +6,4 @@ weslati tutorial testing app
 
 mit# FrappeMyApp
 # FrappeMyApp
+# weslati_app
