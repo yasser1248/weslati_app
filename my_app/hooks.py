@@ -4,6 +4,18 @@ app_publisher = "fawaz"
 app_description = "weslati tutorial testing app"
 app_email = "fawaz@weslati.com"
 app_license = "mit"
+
+fixtures = ["Custom Field"]
+
+# DocType Class
+# ---------------
+# Override standard doctype classes
+
+override_doctype_class = {
+    "Sales Order": "my_app.overrides.sales_order.CustomSalesOrder"
+}
+
+
 # required_apps = []
 
 # Includes in <head>
@@ -110,14 +122,6 @@ app_license = "mit"
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
-# DocType Class
-# ---------------
-# Override standard doctype classes
-
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
-
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -133,7 +137,12 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+    "cron": {
+        "0 0 * * *": [
+            
+        ]
+    }
 # 	"all": [
 # 		"my_app.tasks.all"
 # 	],
@@ -149,7 +158,7 @@ app_license = "mit"
 # 	"monthly": [
 # 		"my_app.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

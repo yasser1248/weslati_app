@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-05-05 11:27:09.279299",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "name1",
+  "color",
+  "column_break_pwgc",
+  "seats",
+  "carplate",
+  "image",
+  "section_break_twbu",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seats",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seats",
+   "options": "2\n3\n4\n5\n6\n7\n8",
+   "reqd": 1
+  },
+  {
+   "description": "Must be in this format: abcd-123",
+   "fieldname": "carplate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Carplate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CAR-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_pwgc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "section_break_twbu",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-05 15:52:55.815058",
+ "modified_by": "Administrator",
+ "module": "My app",
+ "name": "Car",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
