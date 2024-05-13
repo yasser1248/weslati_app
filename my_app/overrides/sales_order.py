@@ -9,3 +9,8 @@ class CustomSalesOrder(SalesOrder):
         now = getdate()
         diff = date_diff(self.delivery_date, now)
         self.custom_days_till_delivery = diff
+        
+        
+def updates_days_of_delivery():
+    
+    
